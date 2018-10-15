@@ -1,0 +1,35 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/demo15?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
+    username: arthur
+    password: arthur
+    type: com.alibaba.druid.pool.DruidDataSource
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update  #create
+
+  # 页面默认前缀目录
+  mvc:
+   view:
+    prefix: /page/
+  # 响应页面默认后缀
+    suffix: .jsp
+
+
+  aop:
+    auto: true
+
+  http:
+    encoding:
+      charset: utf-8
+      enabled: true
+      force: true
+
+server:
+  tomcat:
+    uri-encoding: utf-8
+  port: 8085
+
+
